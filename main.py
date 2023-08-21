@@ -18,10 +18,8 @@ def tracing(request: Request, call_next):
     return response
 
 @app.get("/")
-
 def index():
     index_counter.inc()
-    
     
     return "Hello, world!"
   
